@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ofx-lm-ZFn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="LocalizableUIElementsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LocalizableUIElementsDemo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbj-PO-km4">
+                                <rect key="frame" x="8" y="70" width="359" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xf-1r-LhK">
+                                <rect key="frame" x="8" y="95.5" width="359" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OuD-Uy-8th">
+                                <rect key="frame" x="0.0" y="415" width="375" height="187"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OuD-Uy-8th" secondAttribute="height" multiplier="2:1" id="dMb-xQ-hd9"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Xf-1r-LhK" firstAttribute="trailing" secondItem="zbj-PO-km4" secondAttribute="trailing" id="5xe-cR-pwX"/>
+                            <constraint firstItem="OuD-Uy-8th" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AIl-Vg-7Pt"/>
+                            <constraint firstItem="6Xf-1r-LhK" firstAttribute="top" secondItem="zbj-PO-km4" secondAttribute="bottom" constant="5" id="CvS-ho-D0e"/>
+                            <constraint firstItem="zbj-PO-km4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="PPo-t0-LjD"/>
+                            <constraint firstItem="zbj-PO-km4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="cxo-BS-rgH"/>
+                            <constraint firstItem="6Xf-1r-LhK" firstAttribute="leading" secondItem="zbj-PO-km4" secondAttribute="leading" id="f2l-Hl-lgV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zbj-PO-km4" secondAttribute="trailing" constant="8" id="vxu-5L-MgH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OuD-Uy-8th" secondAttribute="trailing" id="wM1-iv-JDy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OuD-Uy-8th" secondAttribute="bottom" constant="16" id="xU8-4n-rm9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" id="h9c-3b-gYI" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="TabBar.Item.Home"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="messageLabel" destination="6Xf-1r-LhK" id="Sqe-Oj-vDy"/>
+                        <outlet property="picker" destination="OuD-Uy-8th" id="0vT-KX-btH"/>
+                        <outlet property="titleLabel" destination="zbj-PO-km4" id="CWf-I1-bIK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="417" y="786"/>
+        </scene>
+        <!--FeatureViewController-->
+        <scene sceneID="r7R-m9-8nZ">
+            <objects>
+                <viewController title="FeatureViewController" id="iuZ-hz-DCA" customClass="FeatureViewController" customModule="LocalizableUIElementsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OsD-pD-d7c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93b-ZF-nif" customClass="LocalizedUILabel" customModule="LocalizableUIElements">
+                                <rect key="frame" x="8" y="28" width="359" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="feature.UILabel"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0e0-FR-Q6y" customClass="LocalizedUITextView" customModule="LocalizableUIElements">
+                                <rect key="frame" x="8" y="57" width="359" height="179.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0e0-FR-Q6y" secondAttribute="height" multiplier="2:1" id="YLC-Pn-Kw2"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="feature.UITextView"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTZ-18-FAR" customClass="LocalizedUITextField" customModule="LocalizableUIElements">
+                                <rect key="frame" x="8" y="244.5" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="feature.UITextField"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="feature.UITextField.secret"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wdc-bC-3EC" customClass="LocalizedUITextField" customModule="LocalizableUIElements">
+                                <rect key="frame" x="8" y="282.5" width="359" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="feature.UITextField.placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aK-sO-dLr" customClass="LocalizedUIButton" customModule="LocalizableUIElements">
+                                <rect key="frame" x="8" y="320.5" width="359" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="feature.UIButton"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmQ-RW-HIJ" customClass="LocalizedUIButton" customModule="LocalizableUIElements">
+                                <rect key="frame" x="8" y="358.5" width="359" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="feature.UIButton.Alert"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDe-Id-rod" customClass="LocalizedUIButton" customModule="LocalizableUIElements">
+                                <rect key="frame" x="8" y="396.5" width="359" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="feature.UIButton.ActionSheet"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3aK-sO-dLr" firstAttribute="top" secondItem="wdc-bC-3EC" secondAttribute="bottom" constant="8" symbolic="YES" id="0Ny-s1-uCc"/>
+                            <constraint firstItem="wdc-bC-3EC" firstAttribute="trailing" secondItem="jTZ-18-FAR" secondAttribute="trailing" id="Fx8-F3-2Vu"/>
+                            <constraint firstItem="jTZ-18-FAR" firstAttribute="top" secondItem="0e0-FR-Q6y" secondAttribute="bottom" constant="8" symbolic="YES" id="JRP-V7-WYS"/>
+                            <constraint firstItem="93b-ZF-nif" firstAttribute="top" secondItem="4we-kR-Tph" secondAttribute="top" constant="8" id="Moy-UN-BnG"/>
+                            <constraint firstItem="0e0-FR-Q6y" firstAttribute="leading" secondItem="93b-ZF-nif" secondAttribute="leading" id="PFx-CQ-EGT"/>
+                            <constraint firstItem="DmQ-RW-HIJ" firstAttribute="top" secondItem="3aK-sO-dLr" secondAttribute="bottom" constant="8" symbolic="YES" id="Pll-nJ-j0z"/>
+                            <constraint firstItem="3aK-sO-dLr" firstAttribute="leading" secondItem="wdc-bC-3EC" secondAttribute="leading" id="Qs3-N7-xY5"/>
+                            <constraint firstItem="0e0-FR-Q6y" firstAttribute="top" secondItem="93b-ZF-nif" secondAttribute="bottom" constant="8" symbolic="YES" id="ae0-hA-MO9"/>
+                            <constraint firstItem="4we-kR-Tph" firstAttribute="trailing" secondItem="93b-ZF-nif" secondAttribute="trailing" constant="8" id="ayQ-9N-re7"/>
+                            <constraint firstItem="wdc-bC-3EC" firstAttribute="leading" secondItem="jTZ-18-FAR" secondAttribute="leading" id="b5c-8I-Euu"/>
+                            <constraint firstItem="wdc-bC-3EC" firstAttribute="top" secondItem="jTZ-18-FAR" secondAttribute="bottom" constant="8" symbolic="YES" id="bw3-2f-6Q5"/>
+                            <constraint firstItem="DmQ-RW-HIJ" firstAttribute="trailing" secondItem="3aK-sO-dLr" secondAttribute="trailing" id="dFL-eR-pAU"/>
+                            <constraint firstItem="0e0-FR-Q6y" firstAttribute="trailing" secondItem="93b-ZF-nif" secondAttribute="trailing" id="hga-ex-buD"/>
+                            <constraint firstItem="pDe-Id-rod" firstAttribute="leading" secondItem="DmQ-RW-HIJ" secondAttribute="leading" id="kei-kh-txc"/>
+                            <constraint firstItem="jTZ-18-FAR" firstAttribute="leading" secondItem="0e0-FR-Q6y" secondAttribute="leading" id="km0-Q6-mNb"/>
+                            <constraint firstItem="93b-ZF-nif" firstAttribute="leading" secondItem="4we-kR-Tph" secondAttribute="leading" constant="8" id="ta8-tR-RHB"/>
+                            <constraint firstItem="DmQ-RW-HIJ" firstAttribute="leading" secondItem="3aK-sO-dLr" secondAttribute="leading" id="tc1-1x-WNe"/>
+                            <constraint firstItem="jTZ-18-FAR" firstAttribute="trailing" secondItem="0e0-FR-Q6y" secondAttribute="trailing" id="tfM-Vf-4xl"/>
+                            <constraint firstItem="pDe-Id-rod" firstAttribute="trailing" secondItem="DmQ-RW-HIJ" secondAttribute="trailing" id="wrD-4x-SyI"/>
+                            <constraint firstItem="pDe-Id-rod" firstAttribute="top" secondItem="DmQ-RW-HIJ" secondAttribute="bottom" constant="8" symbolic="YES" id="xaz-gw-fM0"/>
+                            <constraint firstItem="3aK-sO-dLr" firstAttribute="trailing" secondItem="wdc-bC-3EC" secondAttribute="trailing" id="yGa-k8-0kF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4we-kR-Tph"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="M45-PE-Q34" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="TabBar.Item.Features"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ff-Rr-QXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="786"/>
+        </scene>
+        <!--LegalViewController-->
+        <scene sceneID="Pyv-2U-hDh">
+            <objects>
+                <viewController title="LegalViewController" id="E5y-em-pkL" customClass="LegalViewController" customModule="LocalizableUIElementsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tRA-Nn-DoU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="n5D-Kd-EeQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Gc2-ND-ea6" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="TabBar.Item.Contact"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fMe-80-Brm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1759" y="786"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="o6P-X0-3jj">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ofx-lm-ZFn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="08P-dq-0Hd">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="cnS-zV-3bS"/>
+                        <segue destination="iuZ-hz-DCA" kind="relationship" relationship="viewControllers" id="URA-6L-rNv"/>
+                        <segue destination="E5y-em-pkL" kind="relationship" relationship="viewControllers" id="qW9-rl-psR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cfj-zv-nA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-105"/>
+        </scene>
+    </scenes>
+</document>

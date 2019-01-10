@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  LocalizableUIElements
+
+  Created by Alexander Weleczka on 06.01.19.
+  Copyright © 2019 AWeleczka.de. All rights reserved.
+*/
+
+"localizable.valid" = "French Ipsum Dolor";
+"localizable.empty" = "";

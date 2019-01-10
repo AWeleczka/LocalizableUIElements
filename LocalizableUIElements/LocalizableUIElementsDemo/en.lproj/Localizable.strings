@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  LocalizableUIElements
+
+  Created by Alexander Weleczka on 09.01.19.
+  Copyright © 2019 AWeleczka.de. All rights reserved.
+*/
+
+"app.name" = "LocalizableUIElements";
+"app.description" = "A set of UIKit-Elements with easy localization in code and storyboard";
+
+"intro.welcome.title" = "Localizable UIElements - Demo";
+"intro.welcome" = "Welcome to this little demo-application for a bit more convenient localization.\nEveryhing in this app is localized using the LocalizableUIElements-Library.\nIn fact, everything on this page is localized using in-code-localization and everything on the UIElements-Tab is localized using storyboard-localization.\nGive it a try. The picker below allows you to switch the language used to display the content, by default it will be the user's prefered language.";
+
+"TabBar.Item.Home" = "Start";
+"TabBar.Item.Features" = "UIElements";
+"TabBar.Item.Contact" = "Contact";
+
+"Picker.de" = "German";
+"Picker.en" = "English";
+"Picker.fr" = "French";
+
+"feature.UILabel" = "Storyboard-Localization for";
+"feature.UITextView" = "pretty much anything.\nSingle or Multi-Line UILabel and UITextViews";
+"feature.UITextField" = "same for UITextFields";
+"feature.UITextField.secret" = "yes, both at the same time too";
+"feature.UITextField.placeholder" = "or just their placeholders";
+"feature.UIButton" = "of course UIButtons";
+"feature.UIButton.Alert" = "and Alerts";
+"feature.UIButton.ActionSheet" = "as well as ActionSheets";

@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  LocalizableUIElements
+
+  Created by Alexander Weleczka on 09.01.19.
+  Copyright © 2019 AWeleczka.de. All rights reserved.
+*/
+
+"app.name" = "LocalizableUIElements";
+"app.description" = "A set of UIKit-Elements with easy localization in code and storyboard";
+
+"intro.welcome" = "French";
+
+"TabBar.Item.Home" = "French";
+"TabBar.Item.Features" = "French";
+"TabBar.Item.Leagal" = "French";
+
+"Picker.de" = "French";
+"Picker.en" = "French";
+"Picker.fr" = "French";
+
+"feature.UILabel" = "UILabel";
+"feature.UITextView" = "UITextView";
+"feature.UITextField" = "UITextField";
+"feature.UITextField.placeholder" = "UITextField.placeholder";
+"feature.UIButton" = "UIButton";

@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  LocalizableUIElements
+
+  Created by Alexander Weleczka on 09.01.19.
+  Copyright © 2019 AWeleczka.de. All rights reserved.
+*/
+
+"app.name" = "LocalizableUIElements";
+"app.description" = "A set of UIKit-Elements with easy localization in code and storyboard";
+
+"intro.welcome.title" = "Localizable UIElements - Demo";
+"intro.welcome" = "Herzlich willkommen zu dieser kleinen Demo für einfachere Lokalisierung.\nAlles in dieser App ist mit der LocalizableUIElements-Bibliothek lokalisiert.\nUm genau zu sein, alles auf dieser Seite ist in-code-lokalisiert udn alles auf der UIElemente-Seite ist storyboard-lokalisiert.\nÜber das Picker-Element unten kannst Du einfach die Sprache der App wechseln, standard ist immer die bevorzugte Sprache des Nutzers.";
+
+"TabBar.Item.Home" = "Start";
+"TabBar.Item.Features" = "UIElemente";
+"TabBar.Item.Contact" = "Kontakt";
+
+"Picker.de" = "Deutsch";
+"Picker.en" = "Englisch";
+"Picker.fr" = "Französisch";
+
+"feature.UILabel" = "UILabel";
+"feature.UITextView" = "UITextView";
+"feature.UITextField" = "UITextField";
+"feature.UITextField.placeholder" = "UITextField.placeholder";
+"feature.UIButton" = "UIButton";
