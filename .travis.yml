@@ -1,4 +1,4 @@
-language: objective-c
+language: swift
 osx_image: xcode10.1
 
 env:
@@ -22,7 +22,7 @@ script:
   - xcodebuild -version
   - xcodebuild -showsdks
   - xcodebuild -list -project "$WORKSPACE"
-  - travis_retry xcodebuild -project "$WORKSPACE" -target "$TARGET" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build | xcpretty -c;
+  - travis_retry xcodebuild -project "$WORKSPACE" -target "$TARGET" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build test | xcpretty -c;
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
   - bash <(curl -s https://codecov.io/bash)
