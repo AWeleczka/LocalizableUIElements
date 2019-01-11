@@ -19,7 +19,7 @@
 		055C881321E737B0002DA962 /* LocalizedUIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C881221E737B0002DA962 /* LocalizedUIBarButtonItem.swift */; };
 		055C881521E73856002DA962 /* LocalizedUIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C881421E73856002DA962 /* LocalizedUIAlertController.swift */; };
 		055C881721E74082002DA962 /* LocalizedUITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C881621E74082002DA962 /* LocalizedUITabBarItem.swift */; };
-		055C881921E747DC002DA962 /* LocalizableUIElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059F368C21E2947F003F5D92 /* LocalizableUIElements.framework */; };
+		055C881921E747DC002DA962 /* LocalizableUIElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059F368C21E2947F003F5D92 /* LocalizableUIElements.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		055C881C21E751A7002DA962 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C881B21E751A7002DA962 /* HomeViewController.swift */; };
 		055C881E21E751C0002DA962 /* FeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C881D21E751C0002DA962 /* FeatureViewController.swift */; };
 		055C882021E751DE002DA962 /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C881F21E751DD002DA962 /* LegalViewController.swift */; };
@@ -45,6 +45,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 055C87EC21E68B5F002DA962;
 			remoteInfo = LocalizableUIElementsDemo;
+		};
+		05C1F85721E8D2D00041B765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 059F368321E2947F003F5D92 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 059F368B21E2947F003F5D92;
+			remoteInfo = LocalizableUIElements;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -211,6 +218,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				05C1F85821E8D2D00041B765 /* PBXTargetDependency */,
 			);
 			name = LocalizableUIElementsDemo;
 			productName = LocalizableUIElementsDemo;
@@ -417,6 +425,11 @@
 			isa = PBXTargetDependency;
 			target = 055C87EC21E68B5F002DA962 /* LocalizableUIElementsDemo */;
 			targetProxy = 05C1F85121E899190041B765 /* PBXContainerItemProxy */;
+		};
+		05C1F85821E8D2D00041B765 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 059F368B21E2947F003F5D92 /* LocalizableUIElements */;
+			targetProxy = 05C1F85721E8D2D00041B765 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
