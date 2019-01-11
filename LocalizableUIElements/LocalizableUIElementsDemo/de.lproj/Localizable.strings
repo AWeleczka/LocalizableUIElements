@@ -25,3 +25,15 @@
 "feature.UITextField" = "UITextField";
 "feature.UITextField.placeholder" = "UITextField.placeholder";
 "feature.UIButton" = "UIButton";
+
+// Localization for Unit Tests
+
+"tests.check.valid" = "Lorem Ipsum";
+"tests.check.empty" = "";
+//"tests.check.invalid" = "Lorem Ipsum";
+
+"tests.localize.string" = "german";
+"tests.localize.stringformat" = "%@ : german";
+"tests.localize.url" = "https://local.host/de";
+"tests.localize.urlformat" = "https://%@.local.host/";
+

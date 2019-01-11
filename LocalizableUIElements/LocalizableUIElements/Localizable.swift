@@ -15,9 +15,11 @@ import Foundation
 public class Localizable {
   public struct Item {
     public let key: String
-    public let args: CVarArg
+    public let args: [CVarArg]
 
-    public init(key: String, _ args: CVarArg...) {
+    public init(
+      key: String,
+      _ args: CVarArg...) {
       self.key = key
       self.args = args
     }
@@ -32,7 +34,8 @@ public class Localizable {
     }
   }
 
-  public static let NotificationChannel = NSNotification.Name(rawValue: "LocalizableUIElements_LanguageCodeChange")
+  public static let NotificationChannel = NSNotification.Name(
+    rawValue: "LocalizableUIElements_LanguageCodeChange")
 
   public static func check(
     key: String) -> Bool {
@@ -49,17 +52,24 @@ public class Localizable {
     return true
   }
 
-  public static func localize(item: Localizable.Item) -> String {
+  public static func localize(
+    item: Localizable.Item) -> String {
     guard Localizable.check(key: item.key) else {
       return String(format: "Missing localization for key '%@'", item.key)
     }
 
-    return Localizable.localize(string: item.key, item.args)
+    return Localizable.localize(string: item.key, arguments: item.args)
   }
 
   public static func localize(
     string key: String,
     _ args: CVarArg...) -> String {
+    return Localizable.localize(string: key, arguments: args)
+  }
+
+  public static func localize(
+    string key: String,
+    arguments: [CVarArg]) -> String {
     // Validate key has a valid and not empty localization
     guard Localizable.check(key: key) else {
       return String(format: "Missing localization for key '%@'", key)
@@ -71,7 +81,7 @@ public class Localizable {
     }
 
     let localization = Localizable.getLocalization(key: key)
-    let localizedString = String(format: localization, args)
+    let localizedString = String(format: localization, arguments: arguments)
 
     return localizedString
   }
@@ -92,7 +102,7 @@ public class Localizable {
       return NSAttributedString(string: key, attributes: attributes)
     }
 
-    let localizedString = Localizable.localize(string: key, args)
+    let localizedString = Localizable.localize(string: key, arguments: args)
     let localizedAttributedString = NSAttributedString(string: localizedString, attributes: attributes)
 
     return localizedAttributedString
@@ -111,7 +121,7 @@ public class Localizable {
       return URL(string: String(format: "http://localhost#%@", key))!
     }
 
-    let localizedString = Localizable.localize(string: key, args)
+    let localizedString = Localizable.localize(string: key, arguments: args)
     let localizedURL = URL(string: localizedString)
 
     if let localizedURL = localizedURL {
@@ -158,7 +168,7 @@ public class Localizable {
 }
 
 public extension String {
-  public func localized() -> String {
-    return Localizable.getLocalization(key: self)
+  public func localized(_ args: CVarArg...) -> String {
+    return String(format: Localizable.getLocalization(key: self), arguments: args)
   }
 }

@@ -13,39 +13,27 @@
 import LocalizableUIElements
 import XCTest
 
-class LocalizableUIElementsTests: XCTestCase {
-  override func setUp() {
-    super.setUp()
+class LocalizableCheckTests: XCTestCase {
+  func testLocalizableCheckValid() {
+    let key = "tests.check.valid"
 
-    // XCUIApplication().launchArguments += ["-AppleLanguages", "(en)"]
-    // XCUIApplication().launchArguments += ["-AppleLocale", "en_US"]
-    // XCUIApplication().launch()
-  }
-
-  override func tearDown() {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-  }
-
-  func testLocalizableCheckSuccess() {
-    let key = "localizable.valid"
-
-    let keyExists = Localizable.check(key)
+    let keyExists = Localizable.check(key: key)
 
     assert(keyExists)
   }
 
-  func testLocalizableCheckFailure() {
-    let key = "localizable.invalid"
+  func testLocalizableCheckInvalid() {
+    let key = "tests.check.invalid"
 
-    let keyExists = Localizable.check(key)
+    let keyExists = Localizable.check(key: key)
 
     assert(!keyExists)
   }
 
   func testLocalizableCheckEmpty() {
-    let key = "localizable.empty"
+    let key = "tests.check.empty"
 
-    let keyExists = Localizable.check(key)
+    let keyExists = Localizable.check(key: key)
 
     assert(!keyExists)
   }

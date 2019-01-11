@@ -28,3 +28,14 @@
 "feature.UIButton" = "of course UIButtons";
 "feature.UIButton.Alert" = "and Alerts";
 "feature.UIButton.ActionSheet" = "as well as ActionSheets";
+
+// Localization for Unit Tests
+
+"tests.check.valid" = "Lorem Ipsum";
+"tests.check.empty" = "";
+//"tests.check.invalid" = "Lorem Ipsum";
+
+"tests.localize.string" = "english";
+"tests.localize.stringformat" = "%@ : english";
+"tests.localize.url" = "https://local.host/en";
+"tests.localize.urlformat" = "https://%@.local.host/";
