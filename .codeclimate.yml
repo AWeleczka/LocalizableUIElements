@@ -3,6 +3,8 @@ engines:
     enabled: true
   fixme:
     enabled: true
+  swiftlint:
+    enabled: true
 ratings:
   paths:
   - "**.swift"
