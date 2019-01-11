@@ -4,6 +4,15 @@ A set of UIKit-Elements with easy localization in code and storyboard.
 ## Installation
 *soon - will be a pod*
 
+---
+
+[![Build Status](https://travis-ci.org/AWeleczka/LocalizableUIElements.svg?branch=master)](https://travis-ci.org/AWeleczka/LocalizableUIElements)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/7dfcfb2fc279e210e9c7/test_coverage)](https://codeclimate.com/github/AWeleczka/LocalizableUIElements/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7dfcfb2fc279e210e9c7/maintainability)](https://codeclimate.com/github/AWeleczka/LocalizableUIElements/maintainability)
+[![codecov](https://codecov.io/gh/AWeleczka/LocalizableUIElements/branch/master/graph/badge.svg)](https://codecov.io/gh/AWeleczka/LocalizableUIElements)
+
+---
+
 ## MIT License
 ### Copyright (c) 2019 Alexander Weleczka
 

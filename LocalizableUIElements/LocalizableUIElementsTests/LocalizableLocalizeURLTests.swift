@@ -25,7 +25,7 @@ class LocalizableLocalizeURLTests: XCTestCase {
     assert(exp == localized)
   }
 
-  func testLocalizableLocalizeStringFormatEn() {
+  func testLocalizableLocalizeURLFormatEn() {
     let lang = "en"
     let exp = URL(string: "https://en.local.host/")!
     let key = "tests.localize.urlformat"
@@ -47,7 +47,7 @@ class LocalizableLocalizeURLTests: XCTestCase {
     assert(exp == localized)
   }
 
-  func testLocalizableLocalizeStringFormatDe() {
+  func testLocalizableLocalizeURLFormatDe() {
     let lang = "de"
     let exp = URL(string: "https://de.local.host/")!
     let key = "tests.localize.urlformat"
@@ -69,7 +69,7 @@ class LocalizableLocalizeURLTests: XCTestCase {
     assert(exp == localized)
   }
 
-  func testLocalizableLocalizeStringFormatFr() {
+  func testLocalizableLocalizeURLFormatFr() {
     let lang = "fr"
     let exp = URL(string: "https://fr.local.host/")!
     let key = "tests.localize.urlformat"
