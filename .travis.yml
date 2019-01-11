@@ -9,9 +9,9 @@ env:
     - IOS_FRAMEWORK_SCHEME="LocalizableUIElements/LocalizableUIElements"
     - IOS_SDK=iphonesimulator12.1
   matrix:
-    - DESTINATION="OS=12.1,name=iPhone 6" TARGET="LocalizableUIElements" SDK="$IOS_SDK" RUN_TESTS="NO"
-    - DESTINATION="OS=12.1,name=iPhone 6" TARGET="LocalizableUIElementsDemo" SDK="$IOS_SDK" RUN_TESTS="NO"
-    - DESTINATION="OS=12.1,name=iPhone 6" TARGET="LocalizableUIElementsTests" SDK="$IOS_SDK" RUN_TESTS="YES"
+    - DESTINATION="platform=iOS Simulator,OS=12.1,name=iPhone 6" TARGET="LocalizableUIElements" SDK="$IOS_SDK" RUN_TESTS="build"
+    - DESTINATION="platform=iOS Simulator,OS=12.1,name=iPhone 6" TARGET="LocalizableUIElementsDemo" SDK="$IOS_SDK" RUN_TESTS="build"
+    - DESTINATION="platform=iOS Simulator,OS=12.1,name=iPhone 6" TARGET="LocalizableUIElementsTests" SDK="$IOS_SDK" RUN_TESTS="test"
 before_install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter
@@ -22,7 +22,7 @@ script:
   - xcodebuild -version
   - xcodebuild -showsdks
   - xcodebuild -list -project "$WORKSPACE"
-  - travis_retry xcodebuild -project "$WORKSPACE" -target "$TARGET" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO build test | xcpretty -c;
+  - travis_retry xcodebuild -project "$WORKSPACE" -target "$TARGET" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO $RUN_TESTS | xcpretty -c;
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
   - bash <(curl -s https://codecov.io/bash)
