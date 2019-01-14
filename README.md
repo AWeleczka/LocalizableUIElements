@@ -15,12 +15,20 @@ You can add this repository as a submodule to your git-repository by executing t
 
 ---
 
+#### CocoaPods
 [![Platform Badge](https://cocoapod-badges.herokuapp.com/p/LocalizableUIElements/badge.svg)](https://cocoapods.org/pods/LocalizableUIElements)
 [![Version Badge](https://cocoapod-badges.herokuapp.com/v/LocalizableUIElements/badge.svg)](https://cocoapods.org/pods/LocalizableUIElements)
 [![License Badge](https://cocoapod-badges.herokuapp.com/l/LocalizableUIElements/badge.svg)](https://cocoapods.org/pods/LocalizableUIElements)
+
+#### Branch: master
 [![Build Status](https://travis-ci.org/AWeleczka/LocalizableUIElements.svg?branch=master)](https://travis-ci.org/AWeleczka/LocalizableUIElements)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7dfcfb2fc279e210e9c7/maintainability)](https://codeclimate.com/github/AWeleczka/LocalizableUIElements/maintainability)
 [![codecov](https://codecov.io/gh/AWeleczka/LocalizableUIElements/branch/master/graph/badge.svg)](https://codecov.io/gh/AWeleczka/LocalizableUIElements)
+
+#### Branch: develop
+[![Build Status](https://travis-ci.org/AWeleczka/LocalizableUIElements.svg?branch=develop)](https://travis-ci.org/AWeleczka/LocalizableUIElements)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7dfcfb2fc279e210e9c7/maintainability)](https://codeclimate.com/github/AWeleczka/LocalizableUIElements/maintainability)
+[![codecov](https://codecov.io/gh/AWeleczka/LocalizableUIElements/branch/develop/graph/badge.svg)](https://codecov.io/gh/AWeleczka/LocalizableUIElements)
 
 ---
 
