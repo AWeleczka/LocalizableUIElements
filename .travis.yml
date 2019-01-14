@@ -14,9 +14,6 @@ env:
     - DESTINATION="platform=iOS Simulator,OS=12.1,name=iPhone 6" TARGET="LocalizableUIElementsDemo" SDK="$IOS_SDK" RUN_TESTS="test"
 before_install:
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-darwin-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
 script:
   - set -o pipefail
   - xcodebuild -version
@@ -24,7 +21,6 @@ script:
   - xcodebuild -list -project "$WORKSPACE"
   - travis_retry xcodebuild -project "$WORKSPACE" -scheme "$TARGET" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO $RUN_TESTS | xcpretty -c;
 after_script:
-  - ./cc-test-reporter after-build --coverage-input-type cobertura --exit-code $TRAVIS_TEST_RESULT
   - bash <(curl -s https://codecov.io/bash) -J 'LocalizableUIElementsTests'
 notifications:
   email: true

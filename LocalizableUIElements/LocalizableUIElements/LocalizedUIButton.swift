@@ -39,8 +39,10 @@ public extension UIButton {
       self.setTitle(localized, for: UIControl.State.highlighted)
       self.setTitle(localized, for: UIControl.State.disabled)
       self.setTitle(localized, for: UIControl.State.selected)
-      self.setTitle(localized, for: UIControl.State.focused)
       self.setTitle(localized, for: UIControl.State.application)
+      if #available(iOS 9.0, *) {
+        self.setTitle(localized, for: UIControl.State.focused)
+      }
     }
   }
 }

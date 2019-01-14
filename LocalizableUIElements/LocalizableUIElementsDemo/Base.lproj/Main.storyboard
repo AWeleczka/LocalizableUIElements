@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ofx-lm-ZFn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ofx-lm-ZFn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,6 +13,10 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController title="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="LocalizableUIElementsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tae-1l-OF3"/>
+                        <viewControllerLayoutGuide type="bottom" id="zPP-Cy-vvO"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OuD-Uy-8th">
-                                <rect key="frame" x="0.0" y="415" width="375" height="187"/>
+                                <rect key="frame" x="0.0" y="414.5" width="375" height="187.5"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="OuD-Uy-8th" secondAttribute="height" multiplier="2:1" id="dMb-xQ-hd9"/>
@@ -42,16 +45,15 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Xf-1r-LhK" firstAttribute="trailing" secondItem="zbj-PO-km4" secondAttribute="trailing" id="5xe-cR-pwX"/>
-                            <constraint firstItem="OuD-Uy-8th" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AIl-Vg-7Pt"/>
+                            <constraint firstItem="OuD-Uy-8th" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AIl-Vg-7Pt"/>
                             <constraint firstItem="6Xf-1r-LhK" firstAttribute="top" secondItem="zbj-PO-km4" secondAttribute="bottom" constant="5" id="CvS-ho-D0e"/>
-                            <constraint firstItem="zbj-PO-km4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="PPo-t0-LjD"/>
-                            <constraint firstItem="zbj-PO-km4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="cxo-BS-rgH"/>
+                            <constraint firstItem="zbj-PO-km4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="70" id="PPo-t0-LjD"/>
+                            <constraint firstItem="zbj-PO-km4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="cxo-BS-rgH"/>
                             <constraint firstItem="6Xf-1r-LhK" firstAttribute="leading" secondItem="zbj-PO-km4" secondAttribute="leading" id="f2l-Hl-lgV"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zbj-PO-km4" secondAttribute="trailing" constant="8" id="vxu-5L-MgH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OuD-Uy-8th" secondAttribute="trailing" id="wM1-iv-JDy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OuD-Uy-8th" secondAttribute="bottom" constant="16" id="xU8-4n-rm9"/>
+                            <constraint firstAttribute="trailing" secondItem="zbj-PO-km4" secondAttribute="trailing" constant="8" id="vxu-5L-MgH"/>
+                            <constraint firstAttribute="trailing" secondItem="OuD-Uy-8th" secondAttribute="trailing" id="wM1-iv-JDy"/>
+                            <constraint firstAttribute="bottom" secondItem="OuD-Uy-8th" secondAttribute="bottom" constant="65" id="xU8-4n-rm9"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" id="h9c-3b-gYI" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
                         <userDefinedRuntimeAttributes>
@@ -72,6 +74,10 @@
         <scene sceneID="r7R-m9-8nZ">
             <objects>
                 <viewController title="FeatureViewController" id="iuZ-hz-DCA" customClass="FeatureViewController" customModule="LocalizableUIElementsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gua-Of-dSK"/>
+                        <viewControllerLayoutGuide type="bottom" id="u2s-LD-6cF"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OsD-pD-d7c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,26 +163,25 @@
                             <constraint firstItem="3aK-sO-dLr" firstAttribute="top" secondItem="wdc-bC-3EC" secondAttribute="bottom" constant="8" symbolic="YES" id="0Ny-s1-uCc"/>
                             <constraint firstItem="wdc-bC-3EC" firstAttribute="trailing" secondItem="jTZ-18-FAR" secondAttribute="trailing" id="Fx8-F3-2Vu"/>
                             <constraint firstItem="jTZ-18-FAR" firstAttribute="top" secondItem="0e0-FR-Q6y" secondAttribute="bottom" constant="8" symbolic="YES" id="JRP-V7-WYS"/>
-                            <constraint firstItem="93b-ZF-nif" firstAttribute="top" secondItem="4we-kR-Tph" secondAttribute="top" constant="8" id="Moy-UN-BnG"/>
+                            <constraint firstItem="93b-ZF-nif" firstAttribute="top" secondItem="OsD-pD-d7c" secondAttribute="top" constant="28" id="Moy-UN-BnG"/>
                             <constraint firstItem="0e0-FR-Q6y" firstAttribute="leading" secondItem="93b-ZF-nif" secondAttribute="leading" id="PFx-CQ-EGT"/>
                             <constraint firstItem="DmQ-RW-HIJ" firstAttribute="top" secondItem="3aK-sO-dLr" secondAttribute="bottom" constant="8" symbolic="YES" id="Pll-nJ-j0z"/>
                             <constraint firstItem="3aK-sO-dLr" firstAttribute="leading" secondItem="wdc-bC-3EC" secondAttribute="leading" id="Qs3-N7-xY5"/>
                             <constraint firstItem="0e0-FR-Q6y" firstAttribute="top" secondItem="93b-ZF-nif" secondAttribute="bottom" constant="8" symbolic="YES" id="ae0-hA-MO9"/>
-                            <constraint firstItem="4we-kR-Tph" firstAttribute="trailing" secondItem="93b-ZF-nif" secondAttribute="trailing" constant="8" id="ayQ-9N-re7"/>
+                            <constraint firstAttribute="trailing" secondItem="93b-ZF-nif" secondAttribute="trailing" constant="8" id="ayQ-9N-re7"/>
                             <constraint firstItem="wdc-bC-3EC" firstAttribute="leading" secondItem="jTZ-18-FAR" secondAttribute="leading" id="b5c-8I-Euu"/>
                             <constraint firstItem="wdc-bC-3EC" firstAttribute="top" secondItem="jTZ-18-FAR" secondAttribute="bottom" constant="8" symbolic="YES" id="bw3-2f-6Q5"/>
                             <constraint firstItem="DmQ-RW-HIJ" firstAttribute="trailing" secondItem="3aK-sO-dLr" secondAttribute="trailing" id="dFL-eR-pAU"/>
                             <constraint firstItem="0e0-FR-Q6y" firstAttribute="trailing" secondItem="93b-ZF-nif" secondAttribute="trailing" id="hga-ex-buD"/>
                             <constraint firstItem="pDe-Id-rod" firstAttribute="leading" secondItem="DmQ-RW-HIJ" secondAttribute="leading" id="kei-kh-txc"/>
                             <constraint firstItem="jTZ-18-FAR" firstAttribute="leading" secondItem="0e0-FR-Q6y" secondAttribute="leading" id="km0-Q6-mNb"/>
-                            <constraint firstItem="93b-ZF-nif" firstAttribute="leading" secondItem="4we-kR-Tph" secondAttribute="leading" constant="8" id="ta8-tR-RHB"/>
+                            <constraint firstItem="93b-ZF-nif" firstAttribute="leading" secondItem="OsD-pD-d7c" secondAttribute="leading" constant="8" id="ta8-tR-RHB"/>
                             <constraint firstItem="DmQ-RW-HIJ" firstAttribute="leading" secondItem="3aK-sO-dLr" secondAttribute="leading" id="tc1-1x-WNe"/>
                             <constraint firstItem="jTZ-18-FAR" firstAttribute="trailing" secondItem="0e0-FR-Q6y" secondAttribute="trailing" id="tfM-Vf-4xl"/>
                             <constraint firstItem="pDe-Id-rod" firstAttribute="trailing" secondItem="DmQ-RW-HIJ" secondAttribute="trailing" id="wrD-4x-SyI"/>
                             <constraint firstItem="pDe-Id-rod" firstAttribute="top" secondItem="DmQ-RW-HIJ" secondAttribute="bottom" constant="8" symbolic="YES" id="xaz-gw-fM0"/>
                             <constraint firstItem="3aK-sO-dLr" firstAttribute="trailing" secondItem="wdc-bC-3EC" secondAttribute="trailing" id="yGa-k8-0kF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="4we-kR-Tph"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="M45-PE-Q34" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
                         <userDefinedRuntimeAttributes>
@@ -192,12 +197,15 @@
         <scene sceneID="Pyv-2U-hDh">
             <objects>
                 <viewController title="LegalViewController" id="E5y-em-pkL" customClass="LegalViewController" customModule="LocalizableUIElementsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W91-GS-2CA"/>
+                        <viewControllerLayoutGuide type="bottom" id="kGd-OR-a58"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tRA-Nn-DoU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="n5D-Kd-EeQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Gc2-ND-ea6" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
                         <userDefinedRuntimeAttributes>
@@ -215,6 +223,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ofx-lm-ZFn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="08P-dq-0Hd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
