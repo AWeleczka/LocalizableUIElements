@@ -12,10 +12,10 @@
 
 import UIKit
 
-@IBDesignable public class LocalizedUIBarButtonItem: UIBarButtonItem {
+@IBDesignable open class LocalizedUIBarButtonItem: UIBarButtonItem {
   @IBInspectable var titleKey: String = ""
 
-  public override func awakeFromNib() {
+  open override func awakeFromNib() {
     super.awakeFromNib()
 
     NotificationCenter.default.addObserver(

@@ -12,11 +12,11 @@
 
 import UIKit
 
-@IBDesignable public class LocalizedUITextField: UITextField {
+@IBDesignable open class LocalizedUITextField: UITextField {
   @IBInspectable var textKey: String = ""
   @IBInspectable var placeholderKey: String = ""
 
-  public override func awakeFromNib() {
+  open override func awakeFromNib() {
     super.awakeFromNib()
 
     NotificationCenter.default.addObserver(

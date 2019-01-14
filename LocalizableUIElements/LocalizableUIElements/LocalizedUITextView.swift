@@ -12,10 +12,10 @@
 
 import UIKit
 
-@IBDesignable public class LocalizedUITextView: UITextView {
+@IBDesignable open class LocalizedUITextView: UITextView {
   @IBInspectable var textKey: String = ""
 
-  public override func awakeFromNib() {
+  open override func awakeFromNib() {
     super.awakeFromNib()
 
     NotificationCenter.default.addObserver(

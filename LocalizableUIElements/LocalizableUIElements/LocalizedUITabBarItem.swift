@@ -12,11 +12,11 @@
 
 import UIKit
 
-@IBDesignable public class LocalizedUITabBarItem: UITabBarItem {
+@IBDesignable open class LocalizedUITabBarItem: UITabBarItem {
   @IBInspectable public var titleKey: String = ""
   @IBInspectable public var badgeKey: String = ""
 
-  public override func awakeFromNib() {
+  open override func awakeFromNib() {
     super.awakeFromNib()
 
     NotificationCenter.default.addObserver(
