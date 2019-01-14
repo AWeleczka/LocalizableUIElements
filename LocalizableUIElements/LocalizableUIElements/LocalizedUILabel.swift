@@ -4,7 +4,7 @@
 //
 //  Readme:        https://github.com/AWeleczka/LocalizableUIElements/blob/master/README.md
 //  Changelog:     https://github.com/AWeleczka/LocalizableUIElements/blob/master/CHANGELOG.md
-//  CocoaPod:      https://cocoapods.org/pods/...
+//  CocoaPod:      https://cocoapods.org/pods/LocalizableUIElements
 //  License (MIT): https://github.com/AWeleczka/LocalizableUIElements/blob/master/LICENSE
 //
 //  Copyright (c) 2019 Alexander Weleczka - https://AWeleczka.de/
@@ -12,10 +12,10 @@
 
 import UIKit
 
-@IBDesignable public class LocalizedUILabel: UILabel {
+@IBDesignable open class LocalizedUILabel: UILabel {
   @IBInspectable public var textKey: String = ""
 
-  public override func awakeFromNib() {
+  open override func awakeFromNib() {
     super.awakeFromNib()
 
     NotificationCenter.default.addObserver(
