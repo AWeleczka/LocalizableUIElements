@@ -2,7 +2,16 @@
 A set of UIKit-Elements with easy localization in code and storyboard.
 
 ## Installation
-*soon - will be a pod*
+### Using CocoaPods
+[CocoaPods](https://cocoapods.org/) is a dependency manager for Swift and Objective-C Cocoa projects. It has over 28 thousand libraries and is used in over 1.8 million apps. CocoaPods can help you scale your projects elegantly.
+
+To install LocalizableUIElements through CocoaPods simply add  
+`pod 'LocalizableUIElements'`  
+to your `Podfile`
+
+### Using git Submodules
+You can add this repository as a submodule to your git-repository by executing the following line inside your repository  
+`git submodule add https://github.com/AWeleczka/LocalizableUIElements.git`
 
 ---
 
