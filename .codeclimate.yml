@@ -10,3 +10,5 @@ ratings:
   - "**.swift"
 exclude_paths:
 - "docs/"
+- "LocalizableUIElements/LocalizableUIElementsDemo/"
+- "LocalizableUIElements/LocalizableUIElementsTests/"
