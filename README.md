@@ -13,6 +13,10 @@ to your `Podfile`
 You can add this repository as a submodule to your git-repository by executing the following line inside your repository  
 `git submodule add https://github.com/AWeleczka/LocalizableUIElements.git`
 
+## Free things are nice
+But time is money.  
+[![Beerpay](https://beerpay.io/AWeleczka/LocalizableUIElements/badge.svg?style=beer)](https://beerpay.io/AWeleczka/LocalizableUIElements)
+
 ---
 
 #### CocoaPods
