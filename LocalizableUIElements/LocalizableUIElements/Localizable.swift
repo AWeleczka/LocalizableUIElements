@@ -169,6 +169,6 @@ public class Localizable {
 
 public extension String {
   public func localized(_ args: CVarArg...) -> String {
-    return String(format: Localizable.getLocalization(key: self), arguments: args)
+    return Localizable.localize(string: self, arguments: args)
   }
 }
