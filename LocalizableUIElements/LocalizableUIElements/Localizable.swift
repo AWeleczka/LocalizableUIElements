@@ -113,12 +113,12 @@ public class Localizable {
     _ args: CVarArg...) -> URL {
     // Validate key has a valid and not empty localization
     guard Localizable.check(key: key) else {
-      return URL(string: String(format: "http://localhost#Missing localization for key '%@'", key))!
+      return URL(string: String(format: "http://localhost#missing=%@", key))!
     }
 
     // Output set to debug - print only localization-key
     guard !Localizable.DisplayDebugKeys else {
-      return URL(string: String(format: "http://localhost#%@", key))!
+      return URL(string: String(format: "http://localhost#debug=%@", key))!
     }
 
     let localizedString = Localizable.localize(string: key, arguments: args)
@@ -127,7 +127,7 @@ public class Localizable {
     if let localizedURL = localizedURL {
       return localizedURL
     } else {
-      return URL(string: String(format: "http://localhost#Invalid URL for '%@'", key))!
+      return URL(string: String(format: "http://localhost#invalid=%@", key))!
     }
   }
 

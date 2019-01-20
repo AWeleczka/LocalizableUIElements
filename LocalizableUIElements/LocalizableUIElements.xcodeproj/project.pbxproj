@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05082E5321F503A00017ACEE /* Font Awesome 5 Brands-Regular-400.otf in Resources */ = {isa = PBXBuildFile; fileRef = 05082E5221F503A00017ACEE /* Font Awesome 5 Brands-Regular-400.otf */; };
 		055C87F021E68B5F002DA962 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C87EF21E68B5F002DA962 /* AppDelegate.swift */; };
-		055C87F521E68B5F002DA962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C87F321E68B5F002DA962 /* Main.storyboard */; };
 		055C87F721E68B60002DA962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 055C87F621E68B60002DA962 /* Assets.xcassets */; };
 		055C87FA21E68B60002DA962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 055C87F821E68B60002DA962 /* LaunchScreen.storyboard */; };
 		055C880121E68E8E002DA962 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 055C880321E68E8E002DA962 /* Localizable.strings */; };
@@ -22,7 +22,8 @@
 		055C881921E747DC002DA962 /* LocalizableUIElements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059F368C21E2947F003F5D92 /* LocalizableUIElements.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		055C881C21E751A7002DA962 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C881B21E751A7002DA962 /* HomeViewController.swift */; };
 		055C881E21E751C0002DA962 /* FeatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C881D21E751C0002DA962 /* FeatureViewController.swift */; };
-		055C882021E751DE002DA962 /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C881F21E751DD002DA962 /* LegalViewController.swift */; };
+		055C882021E751DE002DA962 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055C881F21E751DD002DA962 /* ContactViewController.swift */; };
+		0584D51B21EE2B3E000354B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0584D51921EE2B3E000354B1 /* Main.storyboard */; };
 		059F369121E2947F003F5D92 /* LocalizableUIElements.h in Headers */ = {isa = PBXBuildFile; fileRef = 059F368F21E2947F003F5D92 /* LocalizableUIElements.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		059F369821E29659003F5D92 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059F369721E29659003F5D92 /* Localizable.swift */; };
 		059F36A021E2A5B5003F5D92 /* LocalizableCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059F369F21E2A5B5003F5D92 /* LocalizableCheckTests.swift */; };
@@ -56,9 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05082E5221F503A00017ACEE /* Font Awesome 5 Brands-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Brands-Regular-400.otf"; sourceTree = "<group>"; };
 		055C87ED21E68B5F002DA962 /* LocalizableUIElementsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizableUIElementsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		055C87EF21E68B5F002DA962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		055C87F421E68B5F002DA962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		055C87F621E68B60002DA962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		055C87F921E68B60002DA962 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		055C87FB21E68B60002DA962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,7 +75,8 @@
 		055C881621E74082002DA962 /* LocalizedUITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedUITabBarItem.swift; sourceTree = "<group>"; };
 		055C881B21E751A7002DA962 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		055C881D21E751C0002DA962 /* FeatureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureViewController.swift; sourceTree = "<group>"; };
-		055C881F21E751DD002DA962 /* LegalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalViewController.swift; sourceTree = "<group>"; };
+		055C881F21E751DD002DA962 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		0584D51A21EE2B3E000354B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		059F368C21E2947F003F5D92 /* LocalizableUIElements.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalizableUIElements.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		059F368F21E2947F003F5D92 /* LocalizableUIElements.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalizableUIElements.h; sourceTree = "<group>"; };
 		059F369021E2947F003F5D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,8 +118,9 @@
 		055C87EE21E68B5F002DA962 /* LocalizableUIElementsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				05082E5221F503A00017ACEE /* Font Awesome 5 Brands-Regular-400.otf */,
+				0584D51921EE2B3E000354B1 /* Main.storyboard */,
 				055C87EF21E68B5F002DA962 /* AppDelegate.swift */,
-				055C87F321E68B5F002DA962 /* Main.storyboard */,
 				055C881A21E75199002DA962 /* Main */,
 				055C87F621E68B60002DA962 /* Assets.xcassets */,
 				055C87F821E68B60002DA962 /* LaunchScreen.storyboard */,
@@ -139,7 +142,7 @@
 			children = (
 				055C881B21E751A7002DA962 /* HomeViewController.swift */,
 				055C881D21E751C0002DA962 /* FeatureViewController.swift */,
-				055C881F21E751DD002DA962 /* LegalViewController.swift */,
+				055C881F21E751DD002DA962 /* ContactViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -314,10 +317,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05082E5321F503A00017ACEE /* Font Awesome 5 Brands-Regular-400.otf in Resources */,
 				055C87FA21E68B60002DA962 /* LaunchScreen.storyboard in Resources */,
 				055C880121E68E8E002DA962 /* Localizable.strings in Resources */,
 				055C87F721E68B60002DA962 /* Assets.xcassets in Resources */,
-				055C87F521E68B5F002DA962 /* Main.storyboard in Resources */,
+				0584D51B21EE2B3E000354B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				055C882021E751DE002DA962 /* LegalViewController.swift in Sources */,
+				055C882021E751DE002DA962 /* ContactViewController.swift in Sources */,
 				055C87F021E68B5F002DA962 /* AppDelegate.swift in Sources */,
 				055C881C21E751A7002DA962 /* HomeViewController.swift in Sources */,
 				055C881E21E751C0002DA962 /* FeatureViewController.swift in Sources */,
@@ -434,14 +438,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		055C87F321E68B5F002DA962 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				055C87F421E68B5F002DA962 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		055C87F821E68B60002DA962 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -458,6 +454,14 @@
 				055C880721E68EBF002DA962 /* fr */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		0584D51921EE2B3E000354B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0584D51A21EE2B3E000354B1 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

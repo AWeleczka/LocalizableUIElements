@@ -8,6 +8,11 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Font Awesome 5 Brands-Regular-400.otf">
+            <string>FontAwesome5BrandsRegular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--HomeViewController-->
         <scene sceneID="tne-QT-ifu">
@@ -193,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="1076" y="786"/>
         </scene>
-        <!--LegalViewController-->
+        <!--ContactViewController-->
         <scene sceneID="Pyv-2U-hDh">
             <objects>
-                <viewController title="LegalViewController" id="E5y-em-pkL" customClass="LegalViewController" customModule="LocalizableUIElementsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="ContactViewController" id="E5y-em-pkL" customClass="ContactViewController" customModule="LocalizableUIElementsDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W91-GS-2CA"/>
                         <viewControllerLayoutGuide type="bottom" id="kGd-OR-a58"/>
@@ -204,14 +209,135 @@
                     <view key="view" contentMode="scaleToFill" id="tRA-Nn-DoU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AWeleczka" translatesAutoresizingMaskIntoConstraints="NO" id="0Ud-qC-Vrc">
+                                <rect key="frame" x="20" y="28" width="187.5" height="187.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0Ud-qC-Vrc" secondAttribute="height" multiplier="1:1" id="w7s-yW-lSZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alexander Weleczka" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktP-Os-ewu">
+                                <rect key="frame" x="20" y="223.5" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMu-tS-QoX">
+                                <rect key="frame" x="20" y="252" width="335" height="262.5"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a odio molestie, tincidunt turpis non, consequat mauris. Phasellus convallis ante vel odio malesuada venenatis. Fusce in ultrices mauris, sit amet egestas risus. Donec eleifend eu magna vel tincidunt. Ut vel faucibus ligula, et eleifend lacus. Duis posuere pellentesque tortor. Sed tincidunt at sapien vel pulvinar. Ut ornare at nisi quis vehicula. Nulla non nisl rutrum erat efficitur iaculis. Sed ac sem ac justo condimentum consequat.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5L-Ah-O1U">
+                                <rect key="frame" x="20" y="549.5" width="335" height="60.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20R-fO-ocC">
+                                        <rect key="frame" x="0.0" y="0.0" width="60.5" height="60.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="20R-fO-ocC" secondAttribute="height" multiplier="1:1" id="L9P-Gi-8aQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5BrandsRegular" family="Font Awesome 5 Brands" pointSize="50"/>
+                                        <state key="normal" title=""/>
+                                        <connections>
+                                            <action selector="buttonPressGithub" destination="E5y-em-pkL" eventType="touchUpInside" id="Q5E-xV-xqP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCo-c9-EGS">
+                                        <rect key="frame" x="68.5" y="0.0" width="60.5" height="60.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fCo-c9-EGS" secondAttribute="height" multiplier="1:1" id="Fnn-hU-dQe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5BrandsRegular" family="Font Awesome 5 Brands" pointSize="50"/>
+                                        <state key="normal" title=""/>
+                                        <connections>
+                                            <action selector="buttonPressTwitter" destination="E5y-em-pkL" eventType="touchUpInside" id="ye8-jR-bcf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3c-TK-Iyt">
+                                        <rect key="frame" x="137" y="0.0" width="61" height="60.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="f3c-TK-Iyt" secondAttribute="height" multiplier="1:1" id="CwB-OO-hMN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5BrandsRegular" family="Font Awesome 5 Brands" pointSize="50"/>
+                                        <state key="normal" title=""/>
+                                        <connections>
+                                            <action selector="buttonPressWebsite" destination="E5y-em-pkL" eventType="touchUpInside" id="GTV-bL-aX1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wz-G9-uRX">
+                                        <rect key="frame" x="206" y="0.0" width="60.5" height="60.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="3Wz-G9-uRX" secondAttribute="height" multiplier="1:1" id="VGg-Vy-Zea"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5BrandsRegular" family="Font Awesome 5 Brands" pointSize="50"/>
+                                        <state key="normal" title=""/>
+                                        <connections>
+                                            <action selector="buttonPressLinkedin" destination="E5y-em-pkL" eventType="touchUpInside" id="wt2-7n-cmK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ys-At-ZTb">
+                                        <rect key="frame" x="274.5" y="0.0" width="60.5" height="60.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5Ys-At-ZTb" secondAttribute="height" multiplier="1:1" id="wu0-SX-5kY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FontAwesome5BrandsRegular" family="Font Awesome 5 Brands" pointSize="50"/>
+                                        <state key="normal" title=""/>
+                                        <connections>
+                                            <action selector="buttonPressXing" destination="E5y-em-pkL" eventType="touchUpInside" id="oGJ-l5-AI6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="f3c-TK-Iyt" firstAttribute="top" secondItem="P5L-Ah-O1U" secondAttribute="top" id="0Px-uy-Ywy"/>
+                                    <constraint firstItem="5Ys-At-ZTb" firstAttribute="top" secondItem="P5L-Ah-O1U" secondAttribute="top" id="1YT-7C-1gb"/>
+                                    <constraint firstAttribute="bottom" secondItem="f3c-TK-Iyt" secondAttribute="bottom" id="21c-su-0Sq"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Ys-At-ZTb" secondAttribute="bottom" id="3zQ-Wg-8DJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="fCo-c9-EGS" secondAttribute="bottom" id="Dqo-n2-Ed9"/>
+                                    <constraint firstItem="f3c-TK-Iyt" firstAttribute="width" secondItem="fCo-c9-EGS" secondAttribute="width" id="EXo-Mo-0Ey"/>
+                                    <constraint firstItem="20R-fO-ocC" firstAttribute="top" secondItem="P5L-Ah-O1U" secondAttribute="top" id="FMm-9t-bCT"/>
+                                    <constraint firstItem="3Wz-G9-uRX" firstAttribute="top" secondItem="P5L-Ah-O1U" secondAttribute="top" id="Hcf-gW-vdM"/>
+                                    <constraint firstItem="5Ys-At-ZTb" firstAttribute="leading" secondItem="3Wz-G9-uRX" secondAttribute="trailing" constant="8" symbolic="YES" id="IWa-nT-xuR"/>
+                                    <constraint firstItem="20R-fO-ocC" firstAttribute="leading" secondItem="P5L-Ah-O1U" secondAttribute="leading" id="O7V-KU-Hws"/>
+                                    <constraint firstItem="5Ys-At-ZTb" firstAttribute="width" secondItem="3Wz-G9-uRX" secondAttribute="width" id="R2S-XA-X9A"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Wz-G9-uRX" secondAttribute="bottom" id="Rwp-3b-sNv"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Ys-At-ZTb" secondAttribute="trailing" id="Ygr-UP-nNx"/>
+                                    <constraint firstItem="fCo-c9-EGS" firstAttribute="width" secondItem="20R-fO-ocC" secondAttribute="width" id="Yml-ax-ZBO"/>
+                                    <constraint firstItem="3Wz-G9-uRX" firstAttribute="leading" secondItem="f3c-TK-Iyt" secondAttribute="trailing" constant="8" symbolic="YES" id="cdR-YO-6ds"/>
+                                    <constraint firstItem="fCo-c9-EGS" firstAttribute="leading" secondItem="20R-fO-ocC" secondAttribute="trailing" constant="8" symbolic="YES" id="hwq-ct-Kxr"/>
+                                    <constraint firstAttribute="bottom" secondItem="20R-fO-ocC" secondAttribute="bottom" id="mTA-r8-h8a"/>
+                                    <constraint firstItem="f3c-TK-Iyt" firstAttribute="leading" secondItem="fCo-c9-EGS" secondAttribute="trailing" constant="8" symbolic="YES" id="oP1-xy-Yfm"/>
+                                    <constraint firstItem="3Wz-G9-uRX" firstAttribute="width" secondItem="f3c-TK-Iyt" secondAttribute="width" id="qpr-um-SWq"/>
+                                    <constraint firstItem="fCo-c9-EGS" firstAttribute="top" secondItem="P5L-Ah-O1U" secondAttribute="top" id="yLc-jd-ge5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="P5L-Ah-O1U" firstAttribute="trailing" secondItem="cMu-tS-QoX" secondAttribute="trailing" id="4Sk-3W-VAG"/>
+                            <constraint firstItem="ktP-Os-ewu" firstAttribute="leading" secondItem="tRA-Nn-DoU" secondAttribute="leading" constant="20" symbolic="YES" id="EDc-vR-wDh"/>
+                            <constraint firstItem="cMu-tS-QoX" firstAttribute="trailing" secondItem="ktP-Os-ewu" secondAttribute="trailing" id="aBF-Y1-FWi"/>
+                            <constraint firstItem="cMu-tS-QoX" firstAttribute="top" secondItem="ktP-Os-ewu" secondAttribute="bottom" constant="8" symbolic="YES" id="aBT-1b-A4A"/>
+                            <constraint firstItem="kGd-OR-a58" firstAttribute="top" secondItem="P5L-Ah-O1U" secondAttribute="bottom" constant="8" symbolic="YES" id="cZ3-zg-gl6"/>
+                            <constraint firstItem="0Ud-qC-Vrc" firstAttribute="top" secondItem="W91-GS-2CA" secondAttribute="bottom" constant="8" symbolic="YES" id="dtM-4M-xXC"/>
+                            <constraint firstItem="0Ud-qC-Vrc" firstAttribute="width" secondItem="tRA-Nn-DoU" secondAttribute="width" multiplier="0.5" id="ey7-T8-yIh"/>
+                            <constraint firstItem="ktP-Os-ewu" firstAttribute="top" secondItem="0Ud-qC-Vrc" secondAttribute="bottom" constant="8" symbolic="YES" id="kJQ-rY-WNi"/>
+                            <constraint firstItem="0Ud-qC-Vrc" firstAttribute="leading" secondItem="tRA-Nn-DoU" secondAttribute="leading" constant="20" symbolic="YES" id="lxH-l5-TE3"/>
+                            <constraint firstAttribute="trailing" secondItem="ktP-Os-ewu" secondAttribute="trailing" constant="20" symbolic="YES" id="nYp-hj-xV4"/>
+                            <constraint firstItem="cMu-tS-QoX" firstAttribute="leading" secondItem="ktP-Os-ewu" secondAttribute="leading" id="sDR-pn-7L6"/>
+                            <constraint firstItem="P5L-Ah-O1U" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cMu-tS-QoX" secondAttribute="bottom" constant="8" symbolic="YES" id="wLO-ve-uru"/>
+                            <constraint firstItem="P5L-Ah-O1U" firstAttribute="leading" secondItem="cMu-tS-QoX" secondAttribute="leading" id="yWB-aq-Q9E"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="Gc2-ND-ea6" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="TabBar.Item.Contact"/>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="content" destination="cMu-tS-QoX" id="I7M-r4-Ocv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMe-80-Brm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -240,4 +366,7 @@
             <point key="canvasLocation" x="1076" y="-105"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="AWeleczka" width="162.5" height="162"/>
+    </resources>
 </document>

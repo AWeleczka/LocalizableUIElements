@@ -33,7 +33,7 @@ import UIKit
 
 public extension UILabel {
   public func localizedText(key: String, _ args: CVarArg...) {
-    let localized = Localizable.localize(string: key, args)
+    let localized = Localizable.localize(string: key, arguments: args)
     if self.text != localized {
       self.text = localized
     }

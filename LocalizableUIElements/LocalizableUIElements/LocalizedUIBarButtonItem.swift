@@ -33,7 +33,7 @@ import UIKit
 
 public extension UIBarButtonItem {
   public func localizedTitle(key: String, _ args: CVarArg...) {
-    let localized = Localizable.localize(string: key, args)
+    let localized = Localizable.localize(string: key, arguments: args)
     if self.title != localized {
       self.title = localized
     }
