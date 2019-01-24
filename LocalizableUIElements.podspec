@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'LocalizableUIElements'
-  s.version = '0.1.3'
+  s.version = '0.1.4'
   s.summary = 'A set of UIKit-Elements with easy localization in code and storyboard'
   s.description = <<-DESC
                   A set of UIKit-Elements with easy localization in code and storyboard.
