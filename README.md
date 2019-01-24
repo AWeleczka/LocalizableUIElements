@@ -20,14 +20,13 @@ You can add this repository as a submodule to your git-repository by executing t
 `git submodule add https://github.com/AWeleczka/LocalizableUIElements.git`
 
 # Status
-## master
 [![Build Status](https://travis-ci.org/AWeleczka/LocalizableUIElements.svg?branch=master)](https://travis-ci.org/AWeleczka/LocalizableUIElements)
 [![Maintainability](https://api.codeclimate.com/v1/badges/7dfcfb2fc279e210e9c7/maintainability)](https://codeclimate.com/github/AWeleczka/LocalizableUIElements/maintainability)
 [![codecov](https://codecov.io/gh/AWeleczka/LocalizableUIElements/branch/master/graph/badge.svg)](https://codecov.io/gh/AWeleczka/LocalizableUIElements)
 
 # Free things are nice
-### But time is money.
-[![Beerpay](https://beerpay.io/AWeleczka/LocalizableUIElements/badge.svg?style=beer)](https://beerpay.io/AWeleczka/LocalizableUIElements)  
+But so is beer [![Beerpay](https://beerpay.io/AWeleczka/LocalizableUIElements/badge.svg?style=beer)](https://beerpay.io/AWeleczka/LocalizableUIElements)  
+and go
 [![Beerpay](https://beerpay.io/AWeleczka/LocalizableUIElements/make-wish.svg)](https://beerpay.io/AWeleczka/LocalizableUIElements)
 
 # MIT License
