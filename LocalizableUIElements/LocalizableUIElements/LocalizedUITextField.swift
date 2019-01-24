@@ -38,14 +38,14 @@ import UIKit
 
 public extension UITextField {
   public func localizedText(key: String, _ args: CVarArg...) {
-    let localized = Localizable.localize(string: key, args)
+    let localized = Localizable.localize(string: key, arguments: args)
     if self.text != localized {
       self.text = localized
     }
   }
 
   public func localizedPlaceholder(key: String, _ args: CVarArg...) {
-    let localized = Localizable.localize(string: key, args)
+    let localized = Localizable.localize(string: key, arguments: args)
     if self.placeholder != localized {
       self.placeholder = localized
     }

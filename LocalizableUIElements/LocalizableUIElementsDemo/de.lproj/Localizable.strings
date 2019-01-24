@@ -26,6 +26,13 @@
 "feature.UITextField.placeholder" = "UITextField.placeholder";
 "feature.UIButton" = "UIButton";
 
+"contact.content" = "A %d year old guy writing code. What else is there to say?";
+"contact.url.github" = "https://github.com/AWeleczka/";
+"contact.url.twitter" = "https://twitter.com/aweleczka?lang=de";
+"contact.url.website" = "https://AWeleczka.de/";
+"contact.url.linkedin" = "https://www.linkedin.com/in/aweleczka/";
+"contact.url.xing" = "https://www.xing.com/profile/Alexander_Weleczka/";
+
 // Localization for Unit Tests
 
 "tests.check.valid" = "Lorem Ipsum";

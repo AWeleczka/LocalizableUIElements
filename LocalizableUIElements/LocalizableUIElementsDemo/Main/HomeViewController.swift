@@ -30,8 +30,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     self.picker.delegate = self
     self.picker.dataSource = self
 
-    self.titleLabel.localizedText(key: "intro.welcome.title")
-    self.messageLabel.localizedText(key: "intro.welcome")
+    self.setTexts()
   }
 
   override func viewDidAppear(_ animated: Bool) {
@@ -41,6 +40,11 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
      from: self.languages.startIndex,
      to: self.languages.index(forKey: Localizable.getLanguageCode()) ?? self.languages.startIndex)
      self.picker.selectRow(languageIndex, inComponent: 1, animated: true) */
+  }
+
+  private func setTexts() {
+    self.titleLabel.localizedText(key: "intro.welcome.title")
+    self.messageLabel.localizedText(key: "intro.welcome")
   }
 
   // MARK: UIPickerViewDelegate
@@ -59,6 +63,7 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     Localizable.LanguageCode = languageCode
 
     pickerView.reloadAllComponents()
+    self.setTexts()
   }
 
   // MARK: UIPickerViewDataSource

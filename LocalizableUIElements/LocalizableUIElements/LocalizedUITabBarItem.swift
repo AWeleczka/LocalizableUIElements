@@ -38,17 +38,17 @@ import UIKit
 
 public extension UITabBarItem {
   public func localizedTitle(key: String, _ args: CVarArg...) {
-    let localized = Localizable.localize(string: key, args)
+    let localized = Localizable.localize(string: key, arguments: args)
     if self.title != localized {
-      self.title = Localizable.localize(string: key, args)
+      self.title = localized
     }
   }
 
   public func localizedBadge(key: String?, _ args: CVarArg...) {
     if let key = key {
-      let localized = Localizable.localize(string: key, args)
+      let localized = Localizable.localize(string: key, arguments: args)
       if self.badgeValue != localized {
-        self.badgeValue = Localizable.localize(string: key, args)
+        self.badgeValue = localized
       }
     } else {
       if self.badgeValue != nil {

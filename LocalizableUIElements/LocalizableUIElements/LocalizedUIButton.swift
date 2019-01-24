@@ -33,7 +33,7 @@ import UIKit
 
 public extension UIButton {
   public func localizedTitle(key: String, _ args: CVarArg...) {
-    let localized = Localizable.localize(string: key, args)
+    let localized = Localizable.localize(string: key, arguments: args)
     if self.title(for: .normal) != localized {
       self.setTitle(localized, for: UIControl.State.normal)
       self.setTitle(localized, for: UIControl.State.highlighted)
