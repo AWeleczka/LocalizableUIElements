@@ -29,6 +29,14 @@
 "feature.UIButton.Alert" = "and Alerts";
 "feature.UIButton.ActionSheet" = "as well as ActionSheets";
 
+"feature.UIAlertController.Alert.Title" = "A Localized title for an alert";
+"feature.UIAlertController.Alert.Message" = "using the Localizeable.Item struct";
+"feature.UIAlertController.Alert.Cancel" = "Cancel";
+
+"feature.UIAlertController.ActionSheet.Title" = "A Localized title for an actionsheet";
+"feature.UIAlertController.ActionSheet.Message" = "of course allowing dynamic values in it.\nDid you know it's already %@";
+"feature.UIAlertController.ActionSheet.Cancel" = "Cancel";
+
 "contact.content" = "A %d year old dude writing code.\nWhat else is there to say?\n\nI'm a software developer from the rhein-main area in central Germany. Currently writing code in a small development department in a company that usually makes its money with the event-business.\n\nIf you wanna get in touch with me, well help yourself.";
 "contact.url.github" = "https://github.com/AWeleczka/";
 "contact.url.twitter" = "https://twitter.com/aweleczka?lang=en";

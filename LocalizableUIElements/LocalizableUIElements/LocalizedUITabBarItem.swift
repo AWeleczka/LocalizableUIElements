@@ -50,10 +50,11 @@ public extension UITabBarItem {
       if self.badgeValue != localized {
         self.badgeValue = localized
       }
-    } else {
-      if self.badgeValue != nil {
-        self.badgeValue = nil
-      }
+
+      return
     }
+
+    self.badgeValue = nil
+    return
   }
 }
