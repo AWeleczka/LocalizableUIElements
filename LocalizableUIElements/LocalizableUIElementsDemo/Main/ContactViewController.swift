@@ -22,7 +22,14 @@ class ContactViewController: UIViewController {
     let calendar = Calendar.current
     var age: Int = -2
 
-    let birthdayComponents = DateComponents(calendar: calendar, year: 1990, month: 10, day: 4, hour: 7, minute: 33, second: 0)
+    let birthdayComponents = DateComponents(
+      calendar: calendar,
+      year: 1990,
+      month: 10,
+      day: 4,
+      hour: 7,
+      minute: 33,
+      second: 0)
     if let birthday = birthdayComponents.date {
       let ageComponents = calendar.dateComponents([.year], from: birthday, to: Date())
       age = ageComponents.year ?? -1

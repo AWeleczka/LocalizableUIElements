@@ -149,6 +149,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="feature.UIButton.Alert"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="displayAlertDialog" destination="iuZ-hz-DCA" eventType="touchUpInside" id="Ioa-ng-fb6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDe-Id-rod" customClass="LocalizedUIButton" customModule="LocalizableUIElements">
                                 <rect key="frame" x="8" y="396.5" width="359" height="30"/>
@@ -160,6 +163,9 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="feature.UIButton.ActionSheet"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="displayActionSheet" destination="iuZ-hz-DCA" eventType="touchUpInside" id="WPb-C7-Hbc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
