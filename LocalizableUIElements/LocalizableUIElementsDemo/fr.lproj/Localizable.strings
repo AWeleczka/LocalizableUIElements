@@ -15,8 +15,8 @@
 "TabBar.Item.Features" = "French";
 "TabBar.Item.Leagal" = "French";
 
-"Picker.de" = "French";
-"Picker.en" = "French";
+"Picker.de" = "Nein";
+"Picker.en" = "Not French";
 "Picker.fr" = "French";
 
 "feature.UILabel" = "UILabel";

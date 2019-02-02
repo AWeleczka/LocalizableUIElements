@@ -36,10 +36,10 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
 
-    /* let languageIndex = self.languages.distance(
-     from: self.languages.startIndex,
-     to: self.languages.index(forKey: Localizable.getLanguageCode()) ?? self.languages.startIndex)
-     self.picker.selectRow(languageIndex, inComponent: 1, animated: true) */
+    if let languageIndex = self.languages.index(forKey: Localizable.getLanguageCode()) {
+      let rowNumber = self.languages.distance(from: self.languages.startIndex, to: languageIndex)
+      self.picker.selectRow(rowNumber, inComponent: 0, animated: true)
+    }
   }
 
   private func setTexts() {
@@ -73,6 +73,6 @@ class HomeViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDa
   }
 
   func pickerView(_: UIPickerView, numberOfRowsInComponent _: Int) -> Int {
-    return 3
+    return self.languages.count
   }
 }
