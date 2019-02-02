@@ -20,13 +20,24 @@
 "Picker.en" = "Englisch";
 "Picker.fr" = "Französisch";
 
-"feature.UILabel" = "UILabel";
-"feature.UITextView" = "UITextView";
-"feature.UITextField" = "UITextField";
-"feature.UITextField.placeholder" = "UITextField.placeholder";
-"feature.UIButton" = "UIButton";
+"feature.UILabel" = "Storyboard-Übersetzung für";
+"feature.UITextView" = "eigentlich alles.\nEin- oder Mehrzeilige UILabel und UITextViews";
+"feature.UITextField" = "genauso UITextFields";
+"feature.UITextField.secret" = "ja, natürlich beides gleichzeitig";
+"feature.UITextField.placeholder" = "oder nur die Platzhalter";
+"feature.UIButton" = "natürlich UIButtons";
+"feature.UIButton.Alert" = "und Alerts";
+"feature.UIButton.ActionSheet" = "und ActionSheets";
 
-"contact.content" = "A %d year old guy writing code. What else is there to say?";
+"feature.UIAlertController.Alert.Title" = "Ein übersetzter Titel für einen Alert";
+"feature.UIAlertController.Alert.Message" = "Diese werden über das Localizeable.Item struct übersetzt";
+"feature.UIAlertController.Alert.Cancel" = "Schließen";
+
+"feature.UIAlertController.ActionSheet.Title" = "Ein übersetztes ActionSheet";
+"feature.UIAlertController.ActionSheet.Message" = "Natürlich gehen hier auch dynamische Übersetzungen\nOh, schon so spät?!\n%@";
+"feature.UIAlertController.ActionSheet.Cancel" = "Schließen";
+
+"contact.content" = "Ein %d Jahre alter Softwareentwickler aus dem Rhein-Main-Gebiet in Deutschland.\nZur Zeit angestellt in einer kleine Software-Abteilung bei einem Veranstaltungsunternehmen.\n\nWenn Du mehr wissen willst, viel spaß:";
 "contact.url.github" = "https://github.com/AWeleczka/";
 "contact.url.twitter" = "https://twitter.com/aweleczka?lang=de";
 "contact.url.website" = "https://AWeleczka.de/";
@@ -43,4 +54,3 @@
 "tests.localize.stringformat" = "%@ : german";
 "tests.localize.url" = "https://local.host/de";
 "tests.localize.urlformat" = "https://%@.local.host/";
-

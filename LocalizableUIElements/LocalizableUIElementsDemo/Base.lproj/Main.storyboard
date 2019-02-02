@@ -60,7 +60,10 @@
                             <constraint firstAttribute="bottom" secondItem="OuD-Uy-8th" secondAttribute="bottom" constant="65" id="xU8-4n-rm9"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" id="h9c-3b-gYI" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
+                    <tabBarItem key="tabBarItem" image="baseline_home_white_48pt" landscapeImage="baseline_home_white_48pt" largeContentSizeImage="baseline_home_white_48pt" id="h9c-3b-gYI" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
+                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <inset key="landscapeImageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <color key="badgeColor" red="0.1529411765" green="0.4823529412" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="TabBar.Item.Home"/>
                         </userDefinedRuntimeAttributes>
@@ -194,7 +197,10 @@
                             <constraint firstItem="3aK-sO-dLr" firstAttribute="trailing" secondItem="wdc-bC-3EC" secondAttribute="trailing" id="yGa-k8-0kF"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="M45-PE-Q34" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
+                    <tabBarItem key="tabBarItem" title="Item" image="baseline_view_quilt_white_48pt" landscapeImage="baseline_view_quilt_white_48pt" largeContentSizeImage="baseline_view_quilt_white_48pt" id="M45-PE-Q34" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
+                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <inset key="landscapeImageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <color key="badgeColor" red="0.1529411765" green="0.4823529412" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="TabBar.Item.Features"/>
                         </userDefinedRuntimeAttributes>
@@ -336,7 +342,10 @@
                             <constraint firstItem="P5L-Ah-O1U" firstAttribute="leading" secondItem="cMu-tS-QoX" secondAttribute="leading" id="yWB-aq-Q9E"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Gc2-ND-ea6" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
+                    <tabBarItem key="tabBarItem" title="Item" image="baseline_contact_mail_white_48pt" landscapeImage="baseline_contact_mail_white_48pt" largeContentSizeImage="baseline_contact_mail_white_48pt" id="Gc2-ND-ea6" customClass="LocalizedUITabBarItem" customModule="LocalizableUIElements">
+                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <inset key="landscapeImageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <color key="badgeColor" red="0.1529411765" green="0.4823529412" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="TabBar.Item.Contact"/>
                         </userDefinedRuntimeAttributes>
@@ -359,7 +368,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.15294117647058825" green="0.4823529411764706" blue="0.81960784313725488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.1529411765" green="0.4823529412" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="cnS-zV-3bS"/>
@@ -374,5 +383,8 @@
     </scenes>
     <resources>
         <image name="AWeleczka" width="162.5" height="162"/>
+        <image name="baseline_contact_mail_white_48pt" width="96" height="96"/>
+        <image name="baseline_home_white_48pt" width="96" height="96"/>
+        <image name="baseline_view_quilt_white_48pt" width="96" height="96"/>
     </resources>
 </document>
