@@ -7,6 +7,11 @@ Adding storyboard IBDesignable objects for localization straight from the storyb
 
 ---
 
+### Note
+I do not have access to a mac any longer, therefore  development on this project is on ice from my side.
+
+---
+
 # Installation
 ## Using CocoaPods
 [![Platform Badge](https://cocoapod-badges.herokuapp.com/p/LocalizableUIElements/badge.svg)](https://cocoapods.org/pods/LocalizableUIElements)
